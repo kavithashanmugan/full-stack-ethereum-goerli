@@ -19,6 +19,7 @@ async function main() {
 
   console.log("Greeter deployed to:", greeter.address);
   console.log("Token deployed to:", token.address);
+  console.log("balance of deployer")
 }
 
 main()

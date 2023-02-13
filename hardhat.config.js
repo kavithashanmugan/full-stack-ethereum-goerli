@@ -1,5 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
-
+require("dotenv").config();
+const { ALCHEMY_URL, PRIVATE_KEY } = process.env;
 module.exports = {
   solidity: "0.8.9",
   paths: {
@@ -9,9 +10,9 @@ module.exports = {
     hardhat: {
       chainId: 1337
     },
-    ropsten: {
-      url: "https://ropsten.infura.io/v3/903ad3bdef654d9ba0a0d28b2b5d6edf",
-      accounts: [`0x437cf0472fbe1f6e654b432b43fbcd0e21979f2c721cf2666648ce66fe2fb4e8`]
+    goerli: {
+      url:ALCHEMY_URL ,
+      accounts: ['0x35feae806568e9db10e15b0a13f70056ca6b828d9142afd824908998584f7a7a']
     }
   }
 };

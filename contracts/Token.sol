@@ -1,11 +1,9 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-import "hardhat/console.sol";
-
 contract Token {
-  string public name = "Nader Dabit Token";
-  string public symbol = "NDT";
+  string public name = "Aarav Krishna Token";
+  string public symbol = "AKT";
   uint public totalSupply = 1000000;
   mapping(address => uint) balances;
 
